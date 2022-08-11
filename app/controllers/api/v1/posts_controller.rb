@@ -1,6 +1,6 @@
 class Api::V1::PostsController < ApplicationController
   before_action :set_post, only: %i[ show update destroy ]
-  skip_before_action :verify_authenticity_token
+  # skip_before_action :verify_authenticity_token
 
   # GET /posts
   def index
